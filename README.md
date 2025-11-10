@@ -1,11 +1,11 @@
-##PsyHelp — застосунок для пошуку психологів
+## PsyHelp — застосунок для пошуку психологів
 
 Адаптивний React-застосунок для компанії, що надає послуги психологів. Користувач може переглядати каталог спеціалістів, сортувати їх за різними критеріями, розкривати деталі з відгуками, додавати до “Обраного” та записуватися на консультацію. Авторизація, “обрані” та дані каталогу зберігаються у Firebase (Auth + Realtime Database).
 
 Сторінки: Home / Psychologists / приватна Favorites
 Технології: React, Vite, React Router, react-hook-form, yup, Firebase Auth, Firebase Realtime Database, TypeScript (опційно), Tailwind (або styled-components/SCSS), ESLint + Prettier.
 
-#Функціонал (згідно ТЗ)
+# Функціонал (згідно ТЗ)
 
 1. Авторизація (Firebase Auth): реєстрація, логін, отримання поточного користувача, логаут.
 
@@ -46,7 +46,7 @@ name, avatar_url, experience, reviews, price_per_hour, rating, license, speciali
 
 - За популярністю (рейтинг): від нижчого, від вищого
 
-#Адаптивність та якість
+# Адаптивність та якість
 
 - Гумова верстка від 320px до 1440px (коректно на мобільних/планшетах).
 
@@ -56,7 +56,7 @@ name, avatar_url, experience, reviews, price_per_hour, rating, license, speciali
 
 - Код відформатований без коментарів (ESLint + Prettier).
 
-#Технологічний стек
+# Технологічний стек
 
 - React + Vite
 
@@ -72,7 +72,7 @@ name, avatar_url, experience, reviews, price_per_hour, rating, license, speciali
 
 - Інструменти: ESLint, Prettier
 
-#Архітектура та маршрути
+# Архітектура та маршрути
 src/
   components/
     AuthModal/
@@ -98,7 +98,7 @@ src/
   styles/
 
 
-#Маршрути:
+# Маршрути:
 
 / → Home
 
@@ -106,8 +106,8 @@ src/
 
 /favorites → Favorites (приватний, потребує auth.currentUser)
 
-##Дані та схема Realtime Database
-#Приклад структури
+## Дані та схема Realtime Database
+# Приклад структури
 {
   "psychologists": {
     "-NvAbCdE123": {
@@ -134,7 +134,7 @@ src/
   }
 }
 
-#Правила безпеки (мінімальні)
+# Правила безпеки
 {
   "rules": {
     "psychologists": { ".read": true, ".write": false },
@@ -147,7 +147,7 @@ src/
   }
 }
 
-##Запуск проєкту
+## Запуск проєкту
 # встановлення залежностей
 npm install
 
@@ -164,14 +164,14 @@ npm run preview
 npm run lint
 npm run format
 
-#Деплой
+# Деплой
 Vercel / Netlify
 
-#Білд-команда: npm run build
+# Білд-команда: npm run build
 
 Папка білду: dist
 
-##Подальші поліпшення (опційно)
+## Подальші поліпшення
 
 Збереження заявок на зустріч у users/{uid}/appointments.
 
