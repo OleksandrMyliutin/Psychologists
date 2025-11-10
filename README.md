@@ -149,20 +149,20 @@ src/
 
 # Запуск проєкту
 ## встановлення залежностей
-npm install
+- npm install
 
 ## локальний режим розробки
-npm run dev
+- npm run dev
 
 ## продакшн-збірка
-npm run build
+- npm run build
 
 ## локальний прев’ю готової збірки
-npm run preview
+- npm run preview
 
 ## лінт і форматування
-npm run lint
-npm run format
+- npm run lint
+- npm run format
 
 ## Деплой
 Vercel / Netlify
