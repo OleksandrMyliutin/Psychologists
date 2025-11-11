@@ -1,0 +1,13 @@
+.logo{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #3470ff;
+}
+
+.spanStyle{
+    font-weight: 600;
+    color: #191a15;
+}
