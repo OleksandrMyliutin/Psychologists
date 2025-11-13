@@ -1,13 +1,18 @@
 import React from 'react'
 import Logo from '../Logo/Logo'
 import Nav from '../Nav/Nav'
+import Container from '../Container/Container'
+import AuthActions from '../AuthActions/AuthActions'
 
 const Header = () => {
     return (
-        <>
-            <Logo/>
-            <Nav/>
-        </>
+        <div>
+            <Container>
+                <Logo/>
+                <Nav/>
+                < AuthActions/>
+            </Container>
+        </div>
     )
 }
 
