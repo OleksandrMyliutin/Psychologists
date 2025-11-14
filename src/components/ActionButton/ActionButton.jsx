@@ -1,11 +1,16 @@
-import React from 'react'
+import clsx from 'clsx';
 import s from './ActionButton.module.css'
-const ActionButton = ({isButton = true, children}) => {
+const ActionButton = ({
+    size = 'md',
+    variant = 'fill',
+    color = 'blue',
+    onClick,
+    style,
+    children,
+}) => {
     return (
         <>
-            if({isButton}){
-                <button className={s.btnStandardStyle}>{children}</button>
-            }
+            <button style={style} className={clsx(s.button, s[size], s[variant], s[color])} onClick={onClick}>{children}</button>
         </>
     )
 }

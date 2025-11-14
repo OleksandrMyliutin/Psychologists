@@ -1,0 +1,36 @@
+.container{
+    position: relative;
+}
+
+.navStyle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+.navStyle a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.navStyle a:hover::after{
+    border-radius: 100%;
+    fill: #3470ff;
+}
+
+.login{
+    display: none;
+}
+
+.navLink{
+    display: block;
+}
